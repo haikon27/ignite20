@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    
+} 
+
+img {
+    width: 200px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(58, 151, 58);
+}
+h2{
+    color: rgb(58, 75, 151);
+}
+
+div {
+    padding: 0.4rem;
+    border-radius: 50px;
+    margin: 0.4em;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);;
+
+}

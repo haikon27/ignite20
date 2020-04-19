@@ -1,0 +1,132 @@
+body{
+    margin-top: 1%;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.04rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.section1>.chat {
+    color: white;
+    width: 42%;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-right: 50%;
+    padding: 10px;
+    background-color: #588abd;
+}
+
+.section1>.chat-name{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.section1>.pic img{
+    border-radius: 50%;
+    max-width: 60px;
+    border: solid 3px orange;
+    position: absolute;
+    left: 46%;
+    top: 4%;
+}
+
+.section1>.chat::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 42.5%;
+    top: 10%;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 0 20px 40px;
+border-color: transparent transparent transparent #588abd;
+}
+
+.section1>.time {
+    position: absolute;
+    bottom: 1%;
+    left: 1.5%;
+    display: none;
+    transition: transform 50s;
+}
+
+.section1:hover .time{
+    display: block;
+    transform: translateY(25px);
+    
+}
+
+/*Section 2*/
+
+.section2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.section2>.chat {
+    color: white;
+    width: 42%;
+    border: solid 0px;
+    border-radius: 10px;
+    margin-left: 10%;
+    padding: 10px;
+    background-color: rgb(151, 151, 151);
+}
+
+.section2>.chat-name{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.section2>.pic img{
+    border-radius: 50%;
+    max-width: 60px;
+    border: solid 3px rgb(7, 139, 247);
+    position: absolute;
+    left: 0%;
+    top: 4%;
+}
+
+.section2>.chat::before{
+    content: "";
+    display: block;
+    position: absolute;
+    margin-right: 0px;
+    left: 8%;
+    top: 10%;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 20px 0 20px 40px;
+border-color: transparent transparent transparent rgb(151, 151, 151);
+transform: rotateY(180deg);
+}
+
+.section2>.time {
+    position: absolute;
+    bottom: 1%;
+    left: 43%;
+    display: none;
+    transition: transform 50s;
+}
+
+.section2:hover .time{
+    display: block;
+    transform: translateY(25px);
+    
+}
